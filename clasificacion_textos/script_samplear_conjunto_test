@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#./script_samplear_conjunto_test <numero_de_samples> <inicial> <carpeta>
+
+# ejemplo de uso:
+#./script_samplear_conjunto_test 80 0 1
+
+# el ejemplo guarda 80 textos aleatorios y los enumera desde 0
+# guardandolos en la carpeta /1 ubicada en el path_to_test_set
+
+carpetas=`ls . | shuf -n $1`
+var=$2
+for archivo in $carpetas
+do
+  mv $archivo /path_to_test_set/$3/$var
+  ((var++))  
+done
