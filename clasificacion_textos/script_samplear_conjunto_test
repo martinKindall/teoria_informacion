@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Importante: colocar este script dentro de la carpeta a samplear
+
 #./script_samplear_conjunto_test <numero_de_samples> <inicial> <carpeta>
 
 # ejemplo de uso:
